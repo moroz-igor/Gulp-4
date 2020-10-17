@@ -1,0 +1,16 @@
+include head/head
+include content/index/content
+include content/index/new-block/new-block
+
+
+doctype html
+html(lang="zxx")
+    head
+        +head("index", "main")
+
+    body
+        +content
+
+        script( src ="./jslib/jquery.min.js")    
+        script( src ="./jslib/bootstrap.min.js")    
+        script( src ="./js/main.min.js")    
